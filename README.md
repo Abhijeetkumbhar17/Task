@@ -1,4 +1,4 @@
-**Task Management **
+**Task Management**
 1.Make database and add databse name in .env file
 2.use php artisan migrate
 3.run
