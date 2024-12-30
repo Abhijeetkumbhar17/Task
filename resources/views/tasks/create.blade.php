@@ -35,7 +35,7 @@
         </div>
           <div class="mb-3">
             <label for="inputDate" class="form-label"><strong>Due Date:</strong></label>
-            <input type="text" name="due_date" class="form-control @error('duedate') is-invalid @enderror" id="inputDate" placeholder="Due Date">
+            <input type="date" name="due_date" class="form-control @error('duedate') is-invalid @enderror" id="inputDate" placeholder="Due Date">
             @error('duedate')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
