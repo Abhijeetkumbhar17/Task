@@ -40,7 +40,7 @@ class TaskController extends Controller
         $task =new Task([
             "title" =>$request->title,
             "description" =>$request->description,
-            "due_date" =>$request->duedate,
+            "due_date" =>$request->due_date,
         ]);
        $task->save();
        return redirect('/');
@@ -75,7 +75,7 @@ class TaskController extends Controller
         $post->update([
             "title" =>$request->title,
             "description" =>$request->description,
-            "due_date" =>$request->duedate,
+            "due_date" =>$request->due_date,
         ]);
         return redirect('/');
     }
