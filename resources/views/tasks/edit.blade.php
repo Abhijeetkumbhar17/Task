@@ -35,7 +35,7 @@
         </div>
           <div class="mb-3">
             <label for="inputName" class="form-label"><strong>Due Date:</strong></label>
-            <input type="text" name="due_date" class="form-control @error('duedate') is-invalid @enderror" id="inputDate" value="{{ $task->due_date }}">
+            <input type="date" name="due_date" class="form-control @error('duedate') is-invalid @enderror" id="inputDate" value="{{ $task->due_date }}">
             @error('duedate')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
